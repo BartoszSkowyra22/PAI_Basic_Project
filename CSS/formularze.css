@@ -37,12 +37,33 @@ label {
 }
 .design-btn {
     color: white;
-    margin: 0 20px 20px 20px;
+    margin: 20px;
     background: #1DA1F2;
     cursor: pointer;
     border-radius: 20px;
     font-weight: 900;
     padding: 10px 30px;
     transition: 0.5s;
+}
+
+.design-btn:first-of-type{
+    margin-left: 45px;
+}
+
+#formularz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formularz table {
+    border: #44aaee 1px solid;
+    border-radius: 5px;
+    padding: 15px !important;
+    background: #bddfff;
+}
+
+#countryField {
+    width: 155px;
 }
 
