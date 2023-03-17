@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/formularze.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
     <title>Budowa formularzy</title>
 </head>
 <body>
@@ -34,19 +37,19 @@
                 <form action="mailto:test@pollub.pl" method="post">
                     <table>
                         <tbody>
-                            <tr>
+                            <tr class="design-form">
                                 <td><label for="nameField">Nazwisko:</label></td>
                                 <td colspan="2">
-                                    <input type="text" name="name" id="nameField">
+                                    <input type="text" name="name" id="nameField" class="design-field-form">
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="design-form">
                                 <td><label for="ageField">Wiek:</label></td>
                                 <td colspan="2">
-                                    <input type="text" name="age" id="ageField">
+                                    <input type="text" name="age" id="ageField" class="design-field-form">
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="design-form">
                                 <td><label for="countryField">Państwo:</label> </td>
                                 <td colspan="2">
                                     <select size="1" name="country" id="countryField">
@@ -56,36 +59,39 @@
                                     </select>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="design-form">
                                <td><label for="emailField">Email:</label></td>
-                                <td colspan="2"><input type="email" name="email" id="emailField"></td>
+                                <td colspan="2"><input type="email" name="email" id="emailField"   class="design-field-form"></td>
                             </tr>
                             <tr>
                                 <td colspan="3"> Zamawiam tutorial z języka </td>
                             </tr>
-                            <tr>
+                            <tr class="linear-design">
                                 <td>
-                                    <label><input type="checkbox" name="PHP" value="PHP"> PHP</label>
+                                    <input type="checkbox" name="PHP" value="PHP" id="PHPField">
+                                    <label for="PHPField">PHP</label>
                                 </td>
                                 <td>
-                                    <label><input type="checkbox" name="C/C++" value="C/C++"> C/C++</label>
+                                    <input type="checkbox" name="C/C++" value="C/C++" id="CField">
+                                    <label for="CField">C/C++</label>
                                 </td>
                                 <td>
-                                    <label><input type="checkbox" name="Java" value="Java"> Java</label>
+                                    <input type="checkbox" name="Java" value="Java" id="JavaField">
+                                    <label for="JavaField">Java</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="3">Sposób zapłaty</td>
                             </tr>
-                            <tr>
+                            <tr class="linear-design">
                                 <td><label><input type="radio" name="platnosc" value="EC"> EurCard </label></td>
                                 <td><label><input type="radio" name="platnosc" value="Vi"> Visa </label></td>
                                 <td><label><input type="radio" name="platnosc" value="PB"> przelew bankowy</label></td>
                             </tr>
                         </tbody>
                     </table>
-                    <input type="submit" value="Wyslij">
-                    <input type="reset" value="Anuluj">
+                    <input type="submit" value="Wyslij" class="design-btn">
+                    <input type="reset" value="Anuluj" class="design-btn">
                 </form>
             </div>
         </div>
