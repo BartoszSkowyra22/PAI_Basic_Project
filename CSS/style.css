@@ -7,7 +7,7 @@ body {
     color:#000040;
 }
 
-h1, h2, #stopka {
+h1, h2, footer {
     background: #000040;
     color: #4ae;
     text-align: center;
@@ -28,51 +28,42 @@ tfoot tr p {
     margin-left: 5%;
 }
 
-#menu {
-    float:left;
-    width:100%;
-    margin:0;
-    padding:0;
-    background:#ffffff;
-    border-bottom:2px solid #0000a0;
-}
-#menu li {
-    float: left;
-    margin: 0;
-    list-style: none;
-    padding-right: 3px;
-    font-family: "Lucida Grande", sans-serif;
-    font-size: 85%;
-}
- #menu a {
-      float:left;
-      display:block;
-      margin:0;
-      padding:4px 8px;
-      color:#ffffd7;
-      text-decoration:none;
-      border: 1px solid #0000c6;
-      border-bottom:none;
-      background:#0000a0;
-  }
-#menu a:hover {
-    background:#0000d5;
-    color:#ffffff;
-    text-decoration:none;
+#zawartosc{
+    display: flex;
+    justify-content: flex-start;
 }
 
 #tresc {
-    float:left;
     width:75%;
     padding:1%;
 }
 
-#pasek{
-    float:right;
+aside{
     width:20%;
     padding:1%;
 }
-#stopka{
+@media screen and (max-width: 720px) {
+    #zawartosc{
+        flex-flow: column wrap;
+    }
+    #tresc {
+        width:98%;
+        padding:1%;
+    }
+    aside{
+        display: flex;
+        align-items: stretch;
+        width:98%;
+        padding:1%;
+    }
+    aside .box{
+        float: left;
+        width: 45%;
+        padding: 1%;
+    }
+}
+
+footer{
     clear:both;
     width:100%;
     padding:5px 0 5px 0;
@@ -97,12 +88,18 @@ tfoot tr p {
     font-family: calibri, tahoma, sans-serif;
 }
 ul#nav li {
-    border: 1px solid #d5d5d5; list-style-type: none; float: left;
-    background: #98bed8; margin-left: 3px;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #98bed8;
+    margin-left: 3px;
 }
 ul#nav li:hover {
-    border: 1px solid #d5d5d5; list-style-type: none; float: left;
-    background: #f0f0f0; margin-left: 3px;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #f0f0f0;
+    margin-left: 3px;
 }
 ul#nav li a {
     display : block;
