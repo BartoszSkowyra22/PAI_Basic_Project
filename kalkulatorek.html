@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+  <script src="./JS/function.js"></script>
+  <title>Kalkulatorek</title>
+</head>
+<body>
+<div id="kontener">
+  <div id="baner">
+    <h1>Szybki kurs HTML</h1>
+  </div>
+  <div id="menu">
+    <ul id="nav">
+      <li><a href="index.html">Podstawy</a></li>
+      <li><a href="tabele.html">Tabele</a></li>
+      <li><a href="formularze.html">Formularze</a>
+        <ul>
+          <li><a href="formularze.html" >Pola formularza</a></li>
+          <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
+        </ul>
+      </li>
+      <li><a href="galeria.html">Galeria</a></li>
+    </ul>
+  </div>
+
+  <div id="zawartosc">
+    <div id="tresc">
+      <fieldset>
+        <legend>Kalkulatorek</legend>
+        <table>
+          <thead>
+          <tr>
+            <th>Wpisz liczby:</th>
+            <th>Wskaż działanie</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><label for="varX">X:</label></td>
+            <td><input type="radio" name="dzialanie" value="+" id="addOperation"> <label for="addOperation">+</label></td>
+          </tr>
+          <tr>
+            <td><input type="number" id="varX"></td>
+            <td><input type="radio" name="dzialanie" value="-" id="subOperation"><label for="subOperation">-</label></td>
+          </tr>
+          <tr>
+            <td><label for="varY">Y:</label></td>
+            <td><input type="radio" name="dzialanie" value="*" id="mulOperation"> <label for="mulOperation">*</label></td>
+          </tr>
+          <tr>
+            <td><input type="number" id="varY"></td>
+            <td><input type="radio" name="dzialanie" value="/" id="divOperation"><label for="divOperation">/</label></td>
+          </tr>
+          <tr>
+            <td><button onclick="obliczWynik()">Oblicz</button></td>
+            <td><label for="wynikKalkulatora">Wynik: </label><input type="number" id="wynikKalkulatora" disabled></td>
+          </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+    </div>
+    <aside>
+      <div class="box"> <h3>Walidatory:</h3>
+        <ul>
+          <li> <a href="https://validator.w3.org/">HTML </a></li>
+          <li> <a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+        </ul> </div>
+      <div class="box">
+        <h3>Kursy:</h3>
+        <ul>
+          <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+          <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+          <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+          <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer> &copy;BS </footer>
+</div>
+
+</body>
+</html>
