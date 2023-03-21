@@ -28,18 +28,24 @@ tfoot tr p {
     margin-left: 5%;
 }
 
+#zawartosc{
+    display: flex;
+    justify-content: flex-start;
+}
+
 #tresc {
-    float:left;
     width:75%;
     padding:1%;
 }
 
 aside{
-    float:right;
     width:20%;
     padding:1%;
 }
 @media screen and (max-width: 720px) {
+    #zawartosc{
+        flex-flow: column wrap;
+    }
     #tresc {
         width:98%;
         padding:1%;

@@ -25,79 +25,81 @@
     </ul>
   </div>
 
-  <div id="tresc">
-    <div id="dotacja">
-      <h2>Formularz dotacji</h2>
-      <div id="formularz">
-        <form action="mailto:test@pollub.pl" method="post">
-          <fieldset name="pierwszy">
-            <table>
-              <tbody>
-              <tr>
-                <td><label for="beneficjent">Beneficjent</label></td>
-                <td>
-                  <input list="beneficjent-choose" id="beneficjent" name="beneficjent" title="Wybierz beneficjenta" required>
-                  <datalist id="beneficjent-choose">
-                  <option value="Wioski Dziecięce SOS">
-                  <option value="WOŚP">
-                  <option value="Budzik">
-                </datalist></td>
-              </tr>
-              <tr>
-                <td><label for="wartoscDotacji">Wartość dotacji</label></td>
-                <td><input type="number" id="wartoscDotacji" min="20" step="1" title="Wybierz wartość dotacji" required></td>
-              </tr>
-              </tbody>
-            </table>
-          </fieldset>
-          <fieldset name="drugi">
-            <legend>Dane karty płatniczej</legend>
-            <table>
-              <tbody>
-              <tr>
-                <td><p>Karta</p></td>
-                <td><label><input type="radio" name="karta" value="Vi"> Visa </label></td>
-                <td><label><input type="radio" name="karta" value="MC"> Master Card </label></td>
-              </tr>
-              <tr>
-                <td><label for="numerKarty">Numer</label></td>
-                <td colspan="2"><input type="number" id="numerKarty" pattern="[0-9]{13}$|[0-9]{16}$" title="Podaj 13 lub 16 cyfr" required></td>
-              </tr>
-              <tr>
-                <td><label for="dataWaznosci">Data Ważności</label></td>
-                <td colspan="2"><input type="month" id="dataWaznosci" title="Wybierz date ważności" required></td>
-              </tr>
-              <tr>
-                <td><label for="kodCVV">Kod CVV</label></td>
-                <td colspan="2"><input type="text" id="kodCVV" pattern="[0-9]{3,4}" title="Podaj 3 lub 4 cyfry" required></td>
-              </tr>
-              </tbody>
-            </table>
-          </fieldset>
-          <input type="submit" value="Rejestruj">
-          <input type="reset" value="Anuluj">
-        </form>
+  <div id="zawartosc">
+    <div id="tresc">
+      <div id="dotacja">
+        <h2>Formularz dotacji</h2>
+        <div id="formularz">
+          <form action="mailto:test@pollub.pl" method="post">
+            <fieldset name="pierwszy">
+              <table>
+                <tbody>
+                <tr>
+                  <td><label for="beneficjent">Beneficjent</label></td>
+                  <td>
+                    <input list="beneficjent-choose" id="beneficjent" name="beneficjent" title="Wybierz beneficjenta" required>
+                    <datalist id="beneficjent-choose">
+                    <option value="Wioski Dziecięce SOS">
+                    <option value="WOŚP">
+                    <option value="Budzik">
+                  </datalist></td>
+                </tr>
+                <tr>
+                  <td><label for="wartoscDotacji">Wartość dotacji</label></td>
+                  <td><input type="number" id="wartoscDotacji" min="20" step="1" title="Wybierz wartość dotacji" required></td>
+                </tr>
+                </tbody>
+              </table>
+            </fieldset>
+            <fieldset name="drugi">
+              <legend>Dane karty płatniczej</legend>
+              <table>
+                <tbody>
+                <tr>
+                  <td><p>Karta</p></td>
+                  <td><label><input type="radio" name="karta" value="Vi"> Visa </label></td>
+                  <td><label><input type="radio" name="karta" value="MC"> Master Card </label></td>
+                </tr>
+                <tr>
+                  <td><label for="numerKarty">Numer</label></td>
+                  <td colspan="2"><input type="number" id="numerKarty" pattern="[0-9]{13}$|[0-9]{16}$" title="Podaj 13 lub 16 cyfr" required></td>
+                </tr>
+                <tr>
+                  <td><label for="dataWaznosci">Data Ważności</label></td>
+                  <td colspan="2"><input type="month" id="dataWaznosci" title="Wybierz date ważności" required></td>
+                </tr>
+                <tr>
+                  <td><label for="kodCVV">Kod CVV</label></td>
+                  <td colspan="2"><input type="text" id="kodCVV" pattern="[0-9]{3,4}" title="Podaj 3 lub 4 cyfry" required></td>
+                </tr>
+                </tbody>
+              </table>
+            </fieldset>
+            <input type="submit" value="Rejestruj">
+            <input type="reset" value="Anuluj">
+          </form>
+        </div>
       </div>
+
     </div>
 
+    <aside>
+      <div class="box"> <h3>Walidatory:</h3>
+        <ul>
+          <li> <a href="https://validator.w3.org/">HTML </a></li>
+          <li> <a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+        </ul> </div>
+      <div class="box">
+        <h3>Kursy:</h3>
+        <ul>
+          <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+          <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+          <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+          <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+        </ul>
+      </div>
+    </aside>
   </div>
-
-  <aside>
-    <div class="box"> <h3>Walidatory:</h3>
-      <ul>
-        <li> <a href="https://validator.w3.org/">HTML </a></li>
-        <li> <a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
-      </ul> </div>
-    <div class="box">
-      <h3>Kursy:</h3>
-      <ul>
-        <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
-        <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
-        <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
-        <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
-      </ul>
-    </div>
-  </aside>
 
   <div id="stopka"> &copy;BS </div>
 </div>
