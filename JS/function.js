@@ -14,15 +14,14 @@ function obliczRaty() {
     let rataMiesieczna = document.getElementById('rataMiesieczna');
     let kwotaZOdsetkami = document.getElementById('kwotaZOdsetkami');
 
-    //Wyświetlenie wyniku
-    if (isNaN(rataWynik) || isFinite(rataWynik)) {
-        alert("Wprowadzono błędne dane!");
-        rataMiesieczna.value = 0;
-        kwotaZOdsetkami.value = 0;
-    } else {
-        rataMiesieczna.value = rataWynik;
-        kwotaZOdsetkami.value = rataWynik * ileRat;
-    }
+    rataMiesieczna.value = rataWynik;
+    kwotaZOdsetkami.value = rataWynik * ileRat;
+
+    //Wyświetlenie błędu
+    // if (isNaN(rataWynik) || isFinite(rataWynik)) {
+    //     alert("Wprowadzono błędne dane!");
+    //     rataMiesieczna.value = 0;
+    //     kwotaZOdsetkami.value = 0;
 }
 
 //Zadanie 6.3
