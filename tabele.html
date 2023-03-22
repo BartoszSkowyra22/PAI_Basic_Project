@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="stylesheet" href="CSS/tabele.css" type="text/css">
+    <script src="./JS/jquery-3.6.4.js"></script>
+    <script>
+        $(function(){
+            $("#mainMenu").load("menu.html");
+        });
+    </script>
     <title>Tworzenie tabel</title>
 </head>
 <body>
@@ -12,19 +18,8 @@
         <div id="baner">
             <h1>Szybki kurs HTML</h1>
         </div>
-        <div id="menu">
-            <ul id="nav">
-                <li><a href="index.html">Podstawy</a></li>
-                <li><a href="tabele.html">Tabele</a></li>
-                <li><a href="formularze.html">Formularze</a>
-                    <ul>
-                        <li><a href="formularze.html" >Pola formularza</a></li>
-                        <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
-                    </ul>
-                </li>
-                <li><a href="galeria.html">Galeria</a></li>
-            </ul>
-        </div>
+
+        <nav id="mainMenu"></nav>
 
         <div id="zawartosc">
             <div id="tresc">
