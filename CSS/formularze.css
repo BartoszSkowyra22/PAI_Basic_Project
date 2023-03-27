@@ -67,3 +67,8 @@ label {
     width: 155px;
 }
 
+tbody .czerwone {
+    display: none;
+    color: #ff0000 !important;
+}
+
