@@ -7,15 +7,15 @@ function obliczRaty() {
     let procentRocznie = document.getElementById('procent').value;
 
     //Obliczenia
-    let procentMiesiecznie = procentRocznie / 12;
+    let procentMiesiecznie = procentRocznie / 1200;
     let rataWynik = (kwotaPozyczki * procentMiesiecznie) / (1 - (1 / (1 + procentMiesiecznie)**ileRat));
 
     //Pobranie pól wynikowych
     let rataMiesieczna = document.getElementById('rataMiesieczna');
     let kwotaZOdsetkami = document.getElementById('kwotaZOdsetkami');
 
-    rataMiesieczna.value = rataWynik;
-    kwotaZOdsetkami.value = rataWynik * ileRat;
+    rataMiesieczna.value = rataWynik.toFixed(2);
+    kwotaZOdsetkami.value = Math.ceil(rataWynik * ileRat*100)/100;
 
     //Wyświetlenie błędu
     // if (isNaN(rataWynik) || isFinite(rataWynik)) {
