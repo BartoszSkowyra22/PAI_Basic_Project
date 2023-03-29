@@ -42,7 +42,7 @@ aside{
     width:20%;
     padding:1%;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 886px) {
     #zawartosc{
         flex-flow: column wrap;
     }
@@ -53,12 +53,12 @@ aside{
     aside{
         display: flex;
         align-items: stretch;
+        box-sizing: border-box;
         width:98%;
         padding:1%;
     }
     aside .box{
-        float: left;
-        width: 45%;
+        width: 46%;
         padding: 1%;
     }
 }
@@ -139,8 +139,29 @@ h3 {
     align-items: center;
 }
 
-.wierszGalerii img{
+.kolumnaGalerii img{
     margin-top: 10px !important;
+}
+
+.kolumnaGalerii{
+    margin-left: 7%;
+}
+
+@media screen and (max-width: 886px) {
+    .kolumnaGalerii{
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    #ramkaGalerii{
+        flex-wrap: wrap;
+    }
+    .kolumnaGalerii img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #W3CLogo60 {
