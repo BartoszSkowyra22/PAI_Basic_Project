@@ -167,3 +167,13 @@ h3 {
 #W3CLogo60 {
     width: 60px;
 }
+
+/*Zadanie 9.2*/
+
+.szareTlo{
+    background-color: #bbbbbb !important;
+}
+
+.zielony{
+    background-color: #29aa00;
+}
