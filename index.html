@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/mainSlider.css">
     <script src="./JS/jquery-3.6.4.js"></script>
     <script>
         $(function(){
             $("#mainMenu").load("menu.html");
         });
     </script>
+    <script src="./JS/mainSlider.js"></script>
     <title>Podstawowe znaczniki</title>
 </head>
 <body>
     <div id="kontener">
         <header>
             <h1>Szybki kurs HTML</h1>
+            <div id="bannerHide">
+                <div id="slideshow">
+                    <img src="./images/G_zdjecia/obraz5.JPG" alt="obraz 5" class="active" id="elem1">
+                    <img src="./images/G_zdjecia/obraz2.JPG" alt="obraz 2"  id="elem2">
+                    <img src="./images/G_zdjecia/obraz3.JPG" alt="obraz 3" id="elem3">
+                </div>
+                <div id="slideChoose">
+                    <button id="slide1" onclick="slide1()">1</button>
+                    <button id="slide2" onclick="slide2()">2</button>
+                    <button id="slide3" onclick="slide3()">3</button>
+                </div>
+            </div>
             <nav id="mainMenu"></nav>
         </header>
 
