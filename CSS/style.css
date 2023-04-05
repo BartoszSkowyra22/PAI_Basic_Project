@@ -42,7 +42,7 @@ aside{
     width:20%;
     padding:1%;
 }
-@media screen and (max-width: 886px) {
+@media screen and (min-width: 401px) and (max-width: 886px) {
     #zawartosc{
         flex-flow: column wrap;
     }
@@ -59,6 +59,25 @@ aside{
     }
     aside .box{
         width: 46%;
+        padding: 1%;
+    }
+}
+@media screen and (max-width: 480px) {
+    #zawartosc{
+        flex-flow: column wrap;
+    }
+    #tresc {
+        width:98%;
+        padding:1%;
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+        padding: 1%;
+    }
+    aside .box {
+        width: 100%;
         padding: 1%;
     }
 }
@@ -83,44 +102,84 @@ footer{
 
 /*Zadanie 3.4*/
 #nav {
-    text-align: left;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-family: calibri, tahoma, sans-serif;
 }
+
+ul#nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
 ul#nav li {
     border: 1px solid #d5d5d5;
     list-style-type: none;
-    float: left;
     background: #98bed8;
     margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
+
 ul#nav li:hover {
     border: 1px solid #d5d5d5;
     list-style-type: none;
-    float: left;
     background: #f0f0f0;
     margin-left: 3px;
 }
+
 ul#nav li a {
-    display : block;
-    padding : 4pt;
-    text-decoration : none; }
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+}
+
 ul#nav li li a {
     width: 160px;
 }
+
 ul#nav li li:hover {
     background: white;
 }
+
 ul#nav li ul {
-    overflow: hidden;
     display: none;
-}
-ul#nav li:hover ul {
+    flex-direction: column;
     position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+ul#nav li:hover > ul {
     background: #aaa;
     padding: 0;
-    display: block;
-    width: 177px;
+    display: flex;
+}
+
+@media (max-width: 520px) {
+    ul#nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    ul#nav li {
+        text-align: left;
+
+    }
+
+    ul#nav li:hover > ul {
+        z-index: 10;
+    }
+
+    ul#nav > li > a {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
 /*Zadanie 3.5*/
